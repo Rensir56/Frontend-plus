@@ -148,8 +148,8 @@ useEffect(() => {
 //
 
     function handlekeydown(e: KeyboardEvent<HTMLTextAreaElement>){  //快捷键设置
-        var keyCode = e.keyCode || e.which || e.charCode;
-        var ctrlKey = e.ctrlKey || e.metaKey;
+        const keyCode = e.keyCode || e.which || e.charCode;
+        const ctrlKey = e.ctrlKey || e.metaKey;
         // 判断 ctrl+enter 换行
         if (ctrlKey && keyCode == 13) {
         //换行
